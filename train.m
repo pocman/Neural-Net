@@ -99,11 +99,10 @@ for epoch = 1:epochs
 
     %% HIDDEN LAYER.
     % FILL IN CODE. Replace the line below by one of the options.
-    embed_to_hid_weights_gradient = embedding_layer_state;
+    (b) embed_to_hid_weights_gradient = embedding_layer_state * back_propagated_deriv_1';
     % Options:
 	%     numhid1*numwords X numhid2      numhid1*numwords X batchsize  * numhid2 X batchsize 
     % (a) embed_to_hid_weights_gradient = back_propagated_deriv_1' * embedding_layer_state;
-    % (b) embed_to_hid_weights_gradient = embedding_layer_state * back_propagated_deriv_1';
     % (c) embed_to_hid_weights_gradient = back_propagated_deriv_1;
     % (d) embed_to_hid_weights_gradient = embedding_layer_state;
 	
