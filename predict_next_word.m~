@@ -1,4 +1,6 @@
-%TROLLOLOLOLOL
+function predict_next_word(word1, word2, word3, model, k)
+% Predicts the next word.
+% Inputs:
 %   word1: The first word as a string.
 %   word2: The second word as a string.
 %   word3: The third word as a string.
