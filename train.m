@@ -4,7 +4,8 @@ function [model] = train(epochs)
 %   epochs: Number of epochs to run.
 % Output:
 %   model: A struct containing the learned weights and biases and vocabulary.
-
+%LaLaLa we should add some comments here
+%Neural Network and Deep Learning is really in
 if size(ver('Octave'),1)
   OctaveMode = 1;
   warning('error', 'Octave:broadcast');

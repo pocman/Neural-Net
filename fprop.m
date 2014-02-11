@@ -33,6 +33,7 @@ function [embedding_layer_state, hidden_layer_state, output_layer_state] = ...
 %   output_layer_state: State of units in the output layer as a matrix of size
 %     vocab_size X batchsize
 %
+%Comment here ? sure !
 
 [numwords, batchsize] = size(input_batch);
 [vocab_size, numhid1] = size(word_embedding_weights);
