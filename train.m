@@ -25,14 +25,9 @@ init_wt = 0.01;  % Standard deviation of the normal distribution
                  % which is sampled to get the initial weights; default = 0.01
 
 % VARIABLES FOR TRACKING TRAINING PROGRESS.
-show_training_CE_after = 100;
-show_validation_CE_after = 1000;
+show_training_CE_after = 10;
+show_validation_CE_after = 100;
 
-% LOAD DATA.
-[train_input, train_target, valid_input, valid_target, ...
-  test_input, test_target, vocab] = load_data(batchsize);
-[numwords, batchsize, numbatches] = size(train_input); 
-vocab_size = size(vocab, 2);
 
 % INITIALIZE WEIGHTS AND BIASES.
 word_embedding_weights = init_wt * randn(vocab_size, numhid1);
