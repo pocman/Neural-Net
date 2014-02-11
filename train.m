@@ -19,8 +19,8 @@ end
 batchsize = 100;  % Mini-batch size.
 learning_rate = 0.1;  % Learning rate; default = 0.1.
 momentum = 0.9;  % Momentum; default = 0.9.
-numhid1 = 100;  % Dimensionality of embedding space; default = 50.
-numhid2 = 5;  % Number of units in hidden layer; default = 200.
+numhid1 = 10;  % Dimensionality of embedding space; default = 50.
+numhid2 = 500;  % Number of units in hidden layer; default = 200.
 init_wt = 0.01;  % Standard deviation of the normal distribution
                  % which is sampled to get the initial weights; default = 0.01
 
@@ -109,6 +109,7 @@ for epoch = 1:epochs
 	
     % FILL IN CODE. Replace the line below by one of the options.
     hid_bias_gradient = back_propagated_deriv_1';
+	%not sure this is the good answer
     % Options
     % (a) hid_bias_gradient = sum(back_propagated_deriv_1, 2);
     % (b) hid_bias_gradient = sum(back_propagated_deriv_1, 1);
