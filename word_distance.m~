@@ -16,7 +16,7 @@ if ~any(id1)
   return;
 end
 if ~any(id2)
-  fprintf(1, 'Word is not in vocabulary.\n', word2);
+  fprintf(1, 'Word ''%s\'' not in vocabulary.\n', word2);
   return;
 end
 word_rep1 = word_embedding_weights(id1, :);
