@@ -12,18 +12,6 @@ function [embedding_layer_state, hidden_layer_state, output_layer_state] = ...
 %     vocab_size X numhid1, where vocab_size is the size of the vocabulary
 %     numhid1 is the dimensionality of the embedding space.
 %
-%   embed_to_hid_weights: Weights between the word embedding layer and hidden
-%     layer as a matrix of soze numhid1*numwords X numhid2, numhid2 is the
-%     number of hidden units.
-%
-%   hid_to_output_weights: Weights between the hidden layer and output softmax
-%               unit as a matrix of size numhid2 X vocab_size
-%
-%   hid_bias: Bias of the hidden layer as a matrix of size numhid2 X 1.
-%
-%   output_bias: Bias of the output layer as a matrix of size vocab_size X 1.
-%
-% Outputs:
 %   embedding_layer_state: State of units in the embedding layer as a matrix of
 %     size numhid1*numwords X batchsize
 %
