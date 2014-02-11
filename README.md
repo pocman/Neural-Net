@@ -1,4 +1,1 @@
-gitATrouverUnNomIdiot
-=====================
-
-Original idea by Thomas Pocreau
+J'aimais pas ce qu'il y avait écrit dedans.
